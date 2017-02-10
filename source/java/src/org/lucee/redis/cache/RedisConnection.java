@@ -32,12 +32,13 @@ public class RedisConnection {
 
             String hosts = caster.toString(arguments.get("hosts"));
             String host = hosts.split(":")[0];
-
             Integer port = caster.toInteger(hosts.split(":")[1]);
 
-            JedisPoolConfig config = new JedisPoolConfig();
-            config.setTestOnBorrow(true);
-            
+			JedisPoolConfig config = new JedisPoolConfig();
+			config.setTestOnBorrow(true);
+			config.setMaxTotal(128);
+			// config.setTestOnReturn(true);
+					    
             instance.put(cacheName, new JedisPool(config, host, port));
 
         } catch (PageException e) {

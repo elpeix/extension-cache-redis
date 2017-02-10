@@ -1,0 +1,12 @@
+{
+"builtDate":"2017-02-10 11:04:41",
+"version":"1.0.0.49",
+"id":"4F8856F5-BBBE-494A-900D62CB8B7B61BE",
+"name":"rediscache",
+"codename":"rediscache",
+"label":"Redis Cache",
+"description":"This is the Redis Cache implementation for Lucee. This allows you to cache objects, primitives and queries in a Redis server that can then be used as a cache.",
+"type":"server",
+"author":"Mark Drew & Andrea Campolonghi & DevZzz",
+"category":"Cache"
+}

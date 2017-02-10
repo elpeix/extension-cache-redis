@@ -10,8 +10,6 @@ import java.util.HashMap;
 
 import org.lucee.redis.util.Functions;
 
-
-
 public class RedisCacheEntry implements CacheEntry{
 
     RedisCacheItem item;
